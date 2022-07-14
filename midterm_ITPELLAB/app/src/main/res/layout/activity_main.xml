@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Percentage Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="32dp" />
+    <TextView
+        android:id="@+id/txtWhatIs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="35dp"
+        />
+
+    <EditText
+        android:id="@+id/txtfirstEnter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtWhatIs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtPercentOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtfirstEnter"
+        android:layout_alignBottom="@id/txtfirstEnter"
+        android:layout_marginLeft="125dp"
+        android:layout_marginBottom="5dp"
+        android:text="% Percent of"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/txtSecondEnter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtWhatIs"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCal1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtPercentOf"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="?android:attr/fingerprintAuthDrawable"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/btnClr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnCal1"
+        android:layout_alignTop="@id/txtSecondEnter"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="clear" />
+
+    <EditText
+        android:id="@+id/txtThirdEnter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtWhatIs"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="174sp" />
+
+    <TextView
+        android:id="@+id/txtIsWhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtfirstEnter"
+        android:layout_marginLeft="113dp"
+        android:layout_marginTop="340dp"
+        android:inputType="number"
+        android:text="is What Percent of"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/txtFourthEnter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtWhatIs"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="174dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnCalc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/txtPercentOf"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="180dp"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="?android:attr/fingerprintAuthDrawable"
+        android:text="Calculate" />
+
+    <Button
+        android:id="@+id/btnClr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnCal1"
+        android:layout_alignTop="@id/txtSecondEnter"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="195dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="clear" />
+
+
+</RelativeLayout>
